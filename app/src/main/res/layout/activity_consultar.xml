@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Consultar">
+
+    <ImageView
+        android:id="@+id/gif"
+        android:layout_width="139dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/esta" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@android:style/Widget.DeviceDefault.Light.TextView"
+        android:layout_width="204dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:text="Consulta"
+        android:textAlignment="center"
+        android:textColor="#3DADB1"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/volkhov_bold_italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="239dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="24dp"
+        android:background="#00BCD4"
+        android:text="Cantidad de agua por mes"
+        android:textAlignment="center"
+        android:textColor="#F7FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="114dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginRight="156dp"
+        android:background="@drawable/boton_gris"
+        android:onClick="Salir"
+        android:text="Salir"
+        android:textAlignment="center"
+        android:textColor="#F3FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ahorro" />
+
+    <Button
+        android:id="@+id/btn_ahorro"
+        android:layout_width="172dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:background="@drawable/boton_redondo"
+        android:onClick="Ahorro"
+        android:text="Ahorro de agua mensual"
+        android:textAlignment="center"
+        android:textColor="#F5FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="143dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="131dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
+        android:background="@drawable/boton_redondo"
+        android:onClick="consumo_mes"
+        android:text="Consultar"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gif" />
+</androidx.constraintlayout.widget.ConstraintLayout>
