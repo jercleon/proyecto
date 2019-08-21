@@ -65,7 +65,7 @@ public class consumo_por_mes extends AppCompatActivity {
         spinner = (Spinner)findViewById(R.id.spinner);
         spinner.setAdapter(adapter);
         lineChartView=(LineChartView)findViewById(R.id.lineChart);
-        buscarProducto("http://192.168.0.106/consumo_mes.php?mes="+mes);
+        buscarProducto("http://192.168.43.6/consumo_mes.php?mes="+mes);
         try {
             Thread.sleep(7000);
             createchart();

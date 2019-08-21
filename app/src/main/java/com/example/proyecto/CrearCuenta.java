@@ -74,7 +74,7 @@ public class CrearCuenta extends AppCompatActivity {
         registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ejecutarServicio("http://192.168.0.106/Register.php");
+                ejecutarServicio("http://192.168.43.6/Register.php");
             }
         });
     }

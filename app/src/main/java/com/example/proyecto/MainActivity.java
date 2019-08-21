@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                buscarProducto("http://192.168.0.106/login.php?correo=" + editText.getText() + "&password=" + editText3.getText() + "");
+                buscarProducto("http://192.168.43.6/login.php?correo=" + editText.getText() + "&password=" + editText3.getText() + "");
                 if (id != null) {
                     Inicio(id);
                 }

@@ -92,6 +92,7 @@ public class consulta_por_dia extends AppCompatActivity {
         axisRight(barChart.getAxisRight());
     }
     private DataSet getData(DataSet dataSet){
+
         dataSet.setValueTextSize(10);
         return dataSet;
     }
